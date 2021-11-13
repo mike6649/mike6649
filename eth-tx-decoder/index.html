@@ -2,13 +2,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ethereum Transaction Decoder</title>
+    <title>ETH Transaction Decoder</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <script
       src="https://cdn.ethers.io/lib/ethers-5.4.umd.min.js"
       type="application/javascript"
     ></script>
     <style>
+      body {
+        font: normal 14px Verdana, Arial, sans-serif;
+      }
       .output {
           resize: none;
           line-height: 1.5;
@@ -24,8 +27,9 @@
         display: table;
       }
       .decodeButton {
+        margin: 5px;
         width: 100px;
-        height: 30px;
+        height: 25px;
       }
     </style>
   </head>
@@ -33,12 +37,14 @@
     <div id="app">
         <h1>Ethereum Raw Transaction Decoder </h1>
         <div>
-          <a href="https://github.com/mike6649/">Github</a>
+          <a href="https://github.com/mike6649/">
+            <img src="https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white" alt="Github">
+          </a>
         </div>
         <textarea v-model.trim="rawTx" placeholder="Raw transaction hash" rows="10" cols="100"></textarea>
         <br>
         <button class="decodeButton" v-on:click="parseRawTx">Decode</button>
-        <p style="white-space: pre-line;">Decoded Transaction:</p>
+        <p>Decoded Transaction:</p>
         <textarea v-model="decodedTx" v-bind:rows="numRows" autogrow cols="100" disabled class="output"></textarea>
         <div class="alert">{{err}}</div>
 
