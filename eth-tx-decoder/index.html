@@ -1,0 +1,73 @@
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethereum Transaction Decoder</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.4.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <style>
+      .output {
+          resize: none;
+          line-height: 1.5;
+      }
+      .alert {
+        background-color: rgba(248, 215, 218, 1);
+        border-color: rgba(220, 53, 69, 1);
+        color: rgba(114, 28, 36,1);
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+        <h1>Ethereum Raw Transaction Decoder </h1>
+        <div>
+          <a href="https://github.com/mike6649/">Github</a>
+        </div>
+        <textarea v-model.trim="rawTx" placeholder="Raw transaction hash" rows="10" cols="100"></textarea>
+        <br>
+        <button v-on:click="parseRawTx">Decode</button>
+        <p style="white-space: pre-line;">Decoded Transaction:</p>
+        <textarea v-model="decodedTx" v-bind:rows="numRows" autogrow cols="100" disabled class="output"></textarea>
+        <div class="alert">{{err}}</div>
+
+    </div>
+
+    <script>
+
+      var app = new Vue({
+        el: "#app",
+        data: {
+          rawTx: "0xf86c0a85046c7cfe0083016dea94d1310c1e038bc12865d3d3997275b3e4737c6302880b503be34d9fe80080269fc7eaaa9c21f59adf8ad43ed66cf5ef9ee1c317bd4d32cd65401e7aaca47cfaa0387d79c65b90be6260d09dcfb780f29dd8133b9b1ceb20b83b7e442b4bfc30cb",
+          decodedTx: null,
+          numRows: 10,
+          err: null
+        },
+        methods: {
+          parseRawTx: function(event) {
+            try {
+              decodedTx = ethers.utils.parseTransaction(this.rawTx);
+
+              for (const [key, value] of Object.entries(decodedTx)) {
+                if (ethers.BigNumber.isBigNumber(value)) {
+                  decodedTx[key] = value.toString();
+                }
+              }
+
+              this.decodedTx = JSON.stringify(decodedTx, null, 2);
+              this.numRows = Math.max(this.decodedTx.split("\n").length, 10);
+              this.err = null;
+            } catch (e) {
+              console.error(e);
+              this.err = e.name + ": " + e.message.split("(")[0];
+            }
+            
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
