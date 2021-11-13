@@ -12,12 +12,20 @@
       .output {
           resize: none;
           line-height: 1.5;
+          color: black;
+          word-break: break-all;
       }
       .alert {
         background-color: rgba(248, 215, 218, 1);
         border-color: rgba(220, 53, 69, 1);
         color: rgba(114, 28, 36,1);
+        margin: 5px;
+        padding: 5px;
         display: table;
+      }
+      .decodeButton {
+        width: 100px;
+        height: 30px;
       }
     </style>
   </head>
@@ -29,7 +37,7 @@
         </div>
         <textarea v-model.trim="rawTx" placeholder="Raw transaction hash" rows="10" cols="100"></textarea>
         <br>
-        <button v-on:click="parseRawTx">Decode</button>
+        <button class="decodeButton" v-on:click="parseRawTx">Decode</button>
         <p style="white-space: pre-line;">Decoded Transaction:</p>
         <textarea v-model="decodedTx" v-bind:rows="numRows" autogrow cols="100" disabled class="output"></textarea>
         <div class="alert">{{err}}</div>
@@ -49,7 +57,11 @@
         methods: {
           parseRawTx: function(event) {
             try {
-              decodedTx = ethers.utils.parseTransaction(this.rawTx);
+              if (!this.rawTx.startsWith("0x")) {
+                var decodedTx = ethers.utils.parseTransaction("0x" + this.rawTx);
+              } else {
+                var decodedTx = ethers.utils.parseTransaction(this.rawTx);
+              }
 
               for (const [key, value] of Object.entries(decodedTx)) {
                 if (ethers.BigNumber.isBigNumber(value)) {
@@ -58,7 +70,10 @@
               }
 
               this.decodedTx = JSON.stringify(decodedTx, null, 2);
-              this.numRows = Math.max(this.decodedTx.split("\n").length, 10);
+              var count = 0;
+              const lines = this.decodedTx.split("\n");
+              lines.forEach((line, i) => count += Math.ceil(line.length/100));
+              this.numRows = Math.max(count, 10);
               this.err = null;
             } catch (e) {
               console.error(e);
