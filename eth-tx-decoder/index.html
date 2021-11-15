@@ -12,6 +12,9 @@
       body {
         font: normal 14px Verdana, Arial, sans-serif;
       }
+      textarea {
+        font-family: "Lucida Console", Courier, monospace;
+      }
       .output {
           resize: none;
           line-height: 1.5;
@@ -46,7 +49,7 @@
         <button class="decodeButton" v-on:click="parseRawTx">Decode</button>
         <p>Decoded Transaction:</p>
         <textarea v-model="decodedTx" v-bind:rows="numRows" autogrow cols="100" disabled class="output"></textarea>
-        <div class="alert">{{err}}</div>
+        <div class="alert" v-if="err">{{err}}</div>
 
     </div>
 
