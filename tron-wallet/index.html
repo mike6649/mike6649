@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tron Wallet</title>
+</head>
+
+<body>
+   
+  <header>
+    <h1>Tron Wallet</h1>
+    <p>Shasta Testnet only.</p>
+  </header>
+  <hr>
+  <div id="app">
+    <div>
+      Enter private key:
+      <input size="64" v-model="prvkey" v-on:keyup.enter="updateKey"> <button v-on:click="updateKey">Update Account</button>
+      <p>
+        <button v-on:click="generateAccount">Generate new account</button>
+        <a href="https://www.trongrid.io/faucet">Get testnet funds</a>
+      </p>
+      <hr>
+    </div>
+    <div>
+      <p>Current Address: {{address}}</p>
+      <p>TRX Balance: {{balance}}</p>
+    </div>
+    <hr>
+    <component-tx :prvkey="prvkey" :address="address"></component-tx>
+  </div>
+  
+  <hr>
+  <footer>        
+    <a href="https://github.com/mike6649/">
+      <img src="https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white" alt="Github">
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>  
+  <script src="https://unpkg.com/http-vue-loader"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tronweb@4.0.1/dist/TronWeb.js"></script>
+  <script>
+    httpVueLoader.register(Vue, 'components/component-tx.vue');
+    // TPVuBRCc3MTfzU7XC8D1n5KgT56WoD4RNe
+    var tronWeb = null;
+    new Vue({
+      el: '#app',
+      components: [
+        'component-tx'
+      ],
+      data() {
+        return {
+          prvkey: "90ad5fc5089370a6f212c655c19e8da256692cd2a9b281dfad87822d983a52aa",
+          address: null,
+          balance: null,
+        }
+      },
+      created() {
+        tronWeb = new TronWeb({
+              fullHost: 'https://api.shasta.trongrid.io',
+              headers: {},
+              });
+      },
+      methods: {
+        async updateKey() {
+          try {
+            tronWeb.setPrivateKey(this.prvkey);
+            this.address = tronWeb.address.fromPrivateKey(this.prvkey);
+          } catch (e) {
+            console.log(e);
+          }
+        },
+        async generateAccount() {
+          account = await tronWeb.createAccount();
+          this.prvkey = account.privateKey;
+          this.address = account.address.base58;
+        }
+      },
+      watch: {
+        address: async function (val) {
+          this.balance = await tronWeb.trx.getBalance(val) / 1000000;
+        }
+      }
+    });
+  </script>
+  
+</body>
+  
+</html>
