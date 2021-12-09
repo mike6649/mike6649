@@ -7,6 +7,13 @@
 &nbsp;
 
 ---
+**My Pages**
+
+[ETH Transaction Decoder (supports type-2 transactions!)](https://mike6649.github.io/mike6649/eth-tx-decoder/)
+
+[Tron Shasta Testnet Wallet](https://mike6649.github.io/mike6649/tron-wallet/)
+
+---
 **Languages & Tools**
 <p>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg"></code>
