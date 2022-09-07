@@ -1,8 +1,10 @@
 ## Hello, I'm Michael Tang!
 
+I'm currently a MS Computational Science & Engineering student at Georgia Tech!
 
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/mike6649)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mike6649/)
+![Kaggle](https://road-to-kaggle-grandmaster.vercel.app/api/simple/michaeltang6649)
 
 &nbsp;
 
@@ -17,9 +19,9 @@
 **Languages & Tools**
 <p>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg"></code>
+  <code><img width="15%" src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg"></code>
-  <code><img width="15%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg"></code>
   <br />
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/ethereum/ethereum-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/bitcoin/bitcoin-ar21.svg"></code>
