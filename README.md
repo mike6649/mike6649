@@ -11,6 +11,8 @@ I'm currently a MS Computational Science & Engineering student at Georgia Tech!
 ---
 **My Pages**
 
+[Ethereum Transaction Network Visualization (WIP)](https://mike6649.github.io/mike6649/eth-visualizer/)
+
 [ETH Transaction Decoder (supports type-2 transactions!)](https://mike6649.github.io/mike6649/eth-tx-decoder/)
 
 [Tron Shasta Testnet Wallet](https://mike6649.github.io/mike6649/tron-wallet/)
