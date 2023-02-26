@@ -1,12 +1,14 @@
 ## Hello, I'm Michael Tang!
 
-I'm currently a MS Computational Science & Engineering student at Georgia Tech!
+I'm currently a MS Computational Science & Engineering student at Georgia Tech, currently working as a Graduate Research Assistant at the Strategical Energy Institute!
 
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/mike6649)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mike6649/)
 ![Kaggle](https://road-to-kaggle-grandmaster.vercel.app/api/simple/michaeltang6649)
 
 &nbsp;
+
+I was a winner at Hackalytics 2023! See our submission here on [Devpost](https://devpost.com/software/power-map).
 
 ---
 **My Pages**
