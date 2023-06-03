@@ -1,6 +1,6 @@
 ## Hello, I'm Michael Tang!
 
-I'm currently a MS Computational Science & Engineering student at Georgia Tech, currently working as a Graduate Research Assistant at the Strategical Energy Institute!
+I'm currently a MS Computational Science & Engineering student at Georgia Tech, currently working as a Graduate Research Assistant at the [Aerospace Systems Design Lab](https://energywatch.gatech.edu/about/)!
 
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/mike6649)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mike6649/)
@@ -24,28 +24,29 @@ I was a winner at Hackalytics 2023! See our submission here on [Devpost](https:/
 <p>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg"></code>
+  <code><img width="15%" src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg"></code>
-  <code><img width="15%" src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg"></code>
   <br />
-  <code><img width="15%" src="https://www.vectorlogo.zone/logos/ethereum/ethereum-ar21.svg"></code>
-  <code><img width="15%" src="https://www.vectorlogo.zone/logos/bitcoin/bitcoin-ar21.svg"></code>
-  <code><img width="15%" src="https://www.vectorlogo.zone/logos/ripple/ripple-ar21.svg"></code>
-  <code><img width="15%" src="https://www.vectorlogo.zone/logos/dash/dash-ar21.svg"></code>
-  <br />
-  <code><img width="15%" src="https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-ar21.svg"></code>
+  <code><img width="15%" src="https://www.vectorlogo.zone/logos/apache_pig/apache_pig-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/postgresql/postgresql-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/apache_solr/apache_solr-ar21.svg"></code>
-  <code><img width="15%" src="https://www.vectorlogo.zone/logos/redis/redis-ar21.svg"></code>
+  <code><img width="15%" src="https://www.vectorlogo.zone/logos/sas/sas-ar21.svg"></code>
    <br />
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg"></code>
-  <code><img width="15%" src="https://www.vectorlogo.zone/logos/nginx/nginx-ar21.svg"></code>
-<code><img width="15%" src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-ar21.svg"></code>
+  <code><img width="15%" src="https://www.vectorlogo.zone/logos/d3js/d3js-ar21.svg"></code>
+<code><img width="15%" src="https://www.vectorlogo.zone/logos/plot_ly/plot_ly-ar21.svg"></code>
   <br />
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/jenkins/jenkins-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/circleci/circleci-ar21.svg"></code>
   <code><img width="15%" src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg"></code>
+  <br />
+  <code><img width="15%" src="https://www.vectorlogo.zone/logos/ethereum/ethereum-ar21.svg"></code>
+  <code><img width="15%" src="https://www.vectorlogo.zone/logos/bitcoin/bitcoin-ar21.svg"></code>
+  <code><img width="15%" src="https://www.vectorlogo.zone/logos/ripple/ripple-ar21.svg"></code>
+  <code><img width="15%" src="https://www.vectorlogo.zone/logos/dash/dash-ar21.svg"></code>
+  
 </p>
 
 **About Me:**
