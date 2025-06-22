@@ -1,7 +1,5 @@
 ## Hello, I'm Michael Tang!
 
-I'm currently a MS Computational Science & Engineering student at Georgia Tech, currently working as a Graduate Research Assistant at the [Aerospace Systems Design Lab](https://energywatch.gatech.edu/about/)!
-
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/mike6649)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mike6649/)
 ![Kaggle](https://road-to-kaggle-grandmaster.vercel.app/api/simple/michaeltang6649)
